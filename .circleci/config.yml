@@ -22,6 +22,9 @@ jobs:
     # See: https://circleci.com/docs/configuration-reference/#executor-job
     docker:
       - image: cobra217/mbtci-java21-node20:1.2.28
+        auth:
+            username: "yutaojiang518"
+            password: $DOCKERHUB_ACCESS_TOKEN_YUTAOJ
     # Add steps to the job
     # See: https://circleci.com/docs/configuration-reference/#steps
     steps:
